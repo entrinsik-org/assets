@@ -10,9 +10,10 @@ describe('Assets Plugin', function () {
     var dist = __dirname + '/../dist';
     var assets = require('../');
 
-    beforeEach(function () {
+    beforeEach(function (done) {
         server = new hapi.Server();
         server.connection({ labels: ['content']});
+        server.register(require('inert'), done);
     });
 
     afterEach(function (next) {

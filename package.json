@@ -44,6 +44,7 @@
     "gulp-mocha": "^2.0.0",
     "gulp-tag-version": "^1.2.1",
     "hapi": "^8.2.0",
+    "inert": "^3.2.0",
     "jshint-stylish": "^1.0.1",
     "mocha": "^2.2.1",
     "sinon": "^1.13.0",
