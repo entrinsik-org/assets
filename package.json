@@ -1,6 +1,6 @@
 {
   "name": "ent-assets",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Entrinsik asset manager",
   "main": "lib/index.js",
   "directories": {
