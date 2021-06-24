@@ -21,7 +21,7 @@
     "ent-streams": "^1.8.0",
     "event-stream": "^3.2.2",
     "glob": "^3.2.9",
-    "gulp": "^3.8.8",
+    "gulp": "^4.0.0",
     "gulp-angular-templatecache": "^1.1.2",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.1",
@@ -33,15 +33,17 @@
     "semver": "^2.2.1",
     "uglify-js": "^2.4.13",
     "vinyl": "^0.2.3",
-    "vinyl-fs": "^1.0.0"
+    "vinyl-fs": "^3.0.0"
   },
+  "deprecated": false,
+  "description": "Entrinsik asset manager",
   "devDependencies": {
     "async": "^0.9.0",
     "chai": "^2.1.1",
     "gulp": "^3.8.11",
     "gulp-bump": "^0.2.2",
     "gulp-filter": "^2.0.2",
-    "gulp-git": "^1.1.0",
+    "gulp-git": "^2.10.0",
     "gulp-istanbul": "^0.6.0",
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0",
@@ -52,5 +54,20 @@
     "mocha": "^2.2.1",
     "sinon": "^1.13.0",
     "sinon-chai": "^2.7.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/entrinsik-org/assets#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "ent-assets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entrinsik-org/assets.git"
+  },
+  "scripts": {
+    "test": "mocha test --reporter progress --recursive"
+  },
+  "version": "2.1.0"
 }

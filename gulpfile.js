@@ -68,6 +68,6 @@ gulp.task('push', function (done) {
     git.push('origin', 'master', {args: '--tags'}, done);
 });
 
-gulp.task('release', ['lint', 'test', 'patch']);
+gulp.task('release', gulp.series('lint', 'test', 'patch'));
 
-gulp.task('default', ['lint', 'test']);
+gulp.task('default', gulp.series('lint', 'test'));
